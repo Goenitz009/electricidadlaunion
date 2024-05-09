@@ -1,0 +1,16 @@
+html {
+  --primary-1: #298051;
+  --primary-2: #1d872c;
+  --primary-3: #1a7928;
+  --primary-4: #176b23;
+  --primary-5: #145d1f;
+
+  --secondary-1: #a6ecb0;
+  --secondary-2: #98e9a4;
+  --secondary-3: #8ae697;
+  --secondary-4: #7ce38b;
+  --secondary-5: #6ee07f;
+
+  --white: #fff;
+  --black: #000;
+}

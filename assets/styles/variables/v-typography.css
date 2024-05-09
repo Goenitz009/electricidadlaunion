@@ -1,0 +1,41 @@
+html {
+  /* Familias tipográficas */
+  --font-1: 'Anton';
+  --font-2: 'Pacifico';
+
+  /* Variables tipográficas 
+  --text-2xs: 10px;
+  --text-xs: 12px;
+  --text-s: 14px;
+  --text-m: 16px;
+  --text-l: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+  --text-4xl: 36px;
+  --text-5xl: 48px;
+  --text-6xl: 64px;*/
+
+  /* Escala aplicada */
+  --text-caption: 14px;
+  --text-note: 16px;
+  --text-base: 20px;
+  --text-subheader: 24px;
+  --text-title: 48px;
+  --text-headline: 72px;
+  --text-display: 96px;
+  --text-jumbo: 144px;
+}
+  @media (max-width: 700px) {
+    html{
+    --text-caption: 12px;
+    --text-note: 14px;
+    --text-base: 16px;
+    --text-subheader: 20px;
+    --text-title: 24px;
+    --text-headline: 36px;
+    --text-display: 48px;
+    --text-jumbo: 60px;
+    
+  }
+}
