@@ -1,0 +1,8 @@
+Térmica unipolar SISTELECTRIC 32A 4,5kA curva C
+Térmica bipolar SISTELECTRIC 16A 4.5kA curva C
+Térmica unipolar CHINT NXB-63 32A 6kA curva c
+Térmica unipolar CHINT NXB-63 16A 6kA curva c
+Termica unipolar CHINT NXB-63 25A 6kA curva c
+Térmica unipolar NXB-63 10A 6kA curva c
+Térmica unipolar CHINT NXB-63 20A 6kA curva c
+Térmica tripolar CHINT NXB-63 80A 10kA curva c

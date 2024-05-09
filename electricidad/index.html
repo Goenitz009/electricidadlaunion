@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>Electricidad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+  
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+  />
+  <link rel="icon" href="/assets/images/icono.ico" type="image/x-icon">
+</head>
+<body>
+
+
+<div class="fondo-header">
+  <div class="contact-info">
+      <div class="cont-logo-contact">
+        <a href="https://wa.me/542215034655" >
+        <img src="/assets/images/wplogo.svg" class="wplogo">
+        </a>
+      </div>
+      <a class="text-header">+54(0376)4431616</a>
+      <div class="cont-logo-contact">
+        <img src="/assets/images/emaillogo.svg" class="wplogo">
+      </div>
+      <a class="text-header">cotizaciones@electricidadlaunion.com.ar</a>
+      <div class="cont-logo-contact">
+        <img src="/assets/images/gpslogo.svg" class="wplogo">
+      </div>
+      <a class="text-header">AV.SANTA CATALINA N°2871</a>
+    </div>
+  </div>
+<div class="header">
+  <div class="container grid">
+
+    <a class="header-logo" id="logo-link">
+      <img src="/assets/images/logo1.png" class="header-logo-normal" >
+      <img src="/assets/images/logo1.png" class="header-logo-inverso" >
+    </a>
+
+    
+
+    <button class="hamburger hamburger--arrowturn header-nav-icon" type="button">
+      <span class="hamburguer-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    
+    <div class="nav">
+        <a href="/"
+          
+        >
+          Inicio
+        </a>
+        <a href="/electricidad/"
+           class="active"
+        >
+          Electricidad
+        </a>
+        <a href="/productos/"
+          
+        >
+          Productos
+        </a>
+        <a href="/contacto/"
+          
+        >
+          Contacto
+        </a>
+        <a href="/servicios/"
+          
+        >
+          Servicios
+        </a>
+    </div>
+
+  </div>
+</div>
+
+
+<div>
+
+  <br><br><br><br><br><br><br>
+
+
+<!-- En tu archivo Nunjucks -->
+<!-- En tu archivo Nunjucks -->
+<nav class="dropdown-menu">
+  <div class="dropbtn" onclick="toggleDropdown()">Seleccione aquí la sección del que desea redirigir</div>
+  <div class="dropdown-content" id="dropdown-content">
+     <h2>Cables</h2>
+    <a href="#unipolares">unipolares</a>
+    <a href="#preensanblados">preensanblados</a>
+    <a href="#Subterraneos">Subterraneos</a>
+    <a href="#Tipo Taller">Tipo Taller</a>
+    <a href="#Paralelo">Paralelo</a>
+     <h2>Proteccion</h2>
+    <a href="#termicas">Termicas</a>
+    <a href="#disyuntores">Disyuntores</a>
+    <h2>Cajas y Canalizaciones</h2>
+    <a href="#CañosyAccesorios">Caños y Accesorios</a>
+    <a href="#Cajas">Cajas</a>
+    <a href="#Gabinetes">Gabinetes</a>
+  </div>
+</nav>
+
+
+
+<div class="container-section col-12" id="galleryContainer">
+  <!-- Aquí se generarán dinámicamente los elementos de galería -->
+</div>
+
+<script>
+  // Ruta base de la carpeta de imágenes
+  const imagePath = '/assets/images/termicas/';
+  // Ruta del archivo de productos
+  const productsFile = '/assets/images/productos.txt';
+
+  // Obtener el contenedor de la galería
+  const galleryContainer = document.getElementById('galleryContainer');
+
+  // Función para cargar las imágenes
+  async function loadImages() {
+    try {
+      // Realizar una petición HTTP para obtener el archivo de productos
+      const response = await fetch(productsFile);
+      const text = await response.text();
+
+      // Dividir el texto en líneas
+      const lines = text.split('\n');
+
+      // Iterar sobre cada línea
+      lines.forEach((line, index) => {
+        // Obtener la información del producto de la línea
+        const [fileName, productName, productPrice] = line.trim().split(',');
+
+        // Verificar si se obtuvo la información del producto correctamente
+        if (fileName && productName && productPrice) {
+          
+          // Imprimir los datos en la consola
+          console.log(`Archivo: ${fileName}, Nombre: ${productName}, Precio: ${productPrice}`);
+          // Crear un nuevo elemento div para la imagen
+          const galleryItem = document.createElement('div');
+          galleryItem.classList.add('section');
+
+          // Crear el contenido HTML para el elemento de la galería
+          galleryItem.innerHTML = `
+            <div class="galeria" id="${fileName}">
+              <a href="${imagePath}${fileName}" data-lightbox="galeria">
+                <h2>${productName}</h2>
+                <img src="${imagePath}${fileName}" alt="${productName}">
+                <h2>${productPrice}</h2>
+              </a>
+            </div>
+          `;
+
+          // Agregar el elemento de la galería al contenedor
+          galleryContainer.appendChild(galleryItem);
+
+          
+        }
+      });
+    } catch (error) {
+      console.error('Error al cargar los productos:', error);
+    }
+  }
+
+  // Llamar a la función para cargar las imágenes cuando se cargue el contenido de la página
+  document.addEventListener('DOMContentLoaded', loadImages);
+</script>
+  
+
+</div>
+
+  <div class="footer">
+    <div class="container grid">
+      <div class="col-12">
+         Created by<a href="https://www.facebook.com/gonzaTech">®Gonzalo Techeira</a>
+        <p>El sitio ha sido visitado <span id="visitCount">0</span> veces.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/scripts/nav.js"></script>
+  <script src="/assets/scripts/slider.js"></script>
+  <script src="/assets/scripts/rayo.js"></script>
+  <script src="/assets/scripts/conteffect.js"></script>
+  <script src="/assets/scripts/contador.js"></script> <!-- Importamos el archivo JS -->
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,15 @@
+1.webp,TERMICA1,$4500
+2.webp,TERMICA2,$2800
+3.webp,TERMICA3,$5500
+term4.webp,Terciamsd,$4500
+term5.webp,otratermicmas,$35000
+term6.webp,otratermccmas,$35000
+term7.webp,Térmica unipolar SISTELECTRIC 32A 45kA curva C,$54565
+term8.webp,Térmica unipolar SISTELECTRIC 32A 45kA curva C,$54565
+term9.webp,Térmica unipolar SISTELECTRIC 32A 45kA curva C,$54565
+term10.webp,Térmica unipolar SISTELECTRIC 32A 45kA curva C,$54565
+term11.webp,Térmica unipolar SISTELECTRIC 32A 45kA curva C,$54565
+term12.webp,Térmica unipolar SISTELECTRIC 32A 45kA curva C,$54565
+term13.webp,Térmica unipolar SISTELECTRIC 32A 45kA curva C,$54565
+term14.webp,Térmica unipolar SISTELECTRIC 32A 45kA curva C,$54565
+term15.webp,Térmica unipolar SISTELECTRIC 32A 45kA curva C,$54565

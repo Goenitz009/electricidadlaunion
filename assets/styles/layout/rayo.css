@@ -1,0 +1,16 @@
+.rayo {
+  position: absolute;
+  width: 50px; /* Ancho de la imagen de rayo */
+  height: 50px; /* Altura de la imagen de rayo */
+  background-image: url("/assets/images/rayocursor_v1.gif"); /* Reemplaza 'tu_imagen_de_rayo.png' con la ruta de tu imagen de rayo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  /* Añade estas propiedades para centrar el rayo */
+  top: 50%; /* Posición verticalmente centrada */
+  left: 50%; /* Posición horizontalmente centrada */
+  transform: translate(-50%, -50%); /* Desplaza el rayo hacia atrás en la mitad de su propio tamaño */
+}
