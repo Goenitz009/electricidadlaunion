@@ -1,0 +1,17 @@
+
+.slogan{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.imgslogan{
+  width: 200px;
+  height: 200px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
