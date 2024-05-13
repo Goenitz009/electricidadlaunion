@@ -14,3 +14,4 @@ term13.webp,Térmica unipolar SISTELECTRIC 32A 45kA curva C,$54565
 term14.webp,Térmica unipolar SISTELECTRIC 32A 45kA curva C,$54565
 term15.webp,Térmica unipolar SISTELECTRIC 32A 45kA curva C,$54565
 term16.webp,Térmica unipolar SISTELECTRIC 32A 45kA curva C,$951159
+Gat1.jpg,probando subir desde el celular,$625171
