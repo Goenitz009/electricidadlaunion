@@ -18,6 +18,3 @@ body {
   grid-auto-rows: min-content;
   grid-gap: 0 var(--grid-gap);
 }
-.cuerpo-gris{
-  background-color: rgba(128,128,128,1);
-}
